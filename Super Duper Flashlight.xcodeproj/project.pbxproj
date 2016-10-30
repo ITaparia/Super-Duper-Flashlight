@@ -12,6 +12,7 @@
 		DAB7BAE21DC168DE00DB10BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7BAE01DC168DE00DB10BA /* Main.storyboard */; };
 		DAB7BAE41DC168DE00DB10BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7BAE31DC168DE00DB10BA /* Assets.xcassets */; };
 		DAB7BAE71DC168DE00DB10BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7BAE51DC168DE00DB10BA /* LaunchScreen.storyboard */; };
+		DAB7BAF01DC1705A00DB10BA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7BAEF1DC1705A00DB10BA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DAB7BAE31DC168DE00DB10BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB7BAE61DC168DE00DB10BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB7BAE81DC168DE00DB10BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB7BAEF1DC1705A00DB10BA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB7BAF01DC1705A00DB10BA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				DAB7BADB1DC168DE00DB10BA /* Super Duper Flashlight */,
 				DAB7BADA1DC168DE00DB10BA /* Products */,
+				DAB7BAEE1DC1705A00DB10BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				DAB7BAE81DC168DE00DB10BA /* Info.plist */,
 			);
 			path = "Super Duper Flashlight";
+			sourceTree = "<group>";
+		};
+		DAB7BAEE1DC1705A00DB10BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7BAEF1DC1705A00DB10BA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +109,11 @@
 					DAB7BAD81DC168DE00DB10BA = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

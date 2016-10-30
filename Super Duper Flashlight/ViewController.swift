@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import CoreLocation
+
+
 
 class ViewController: UIViewController {
 
+    var m = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        m.requestWhenInUseAuthorization()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +27,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func turnOff(_ sender: UISwitch) {
+        
+        if sender.isOn {
+            
+            self.view.backgroundColor = UIColor.white;
+            
+        } else {
+            
+            self.view.backgroundColor = UIColor.black;
+            
+        }
+        
+    }
 
 }
 
